@@ -10,14 +10,12 @@ def main():
         solution_path = bfs(initial_state)
         if not solution_path:
             print("No solution found using BFS.")
-            return
-        formatted_output = reconstruct_bfs_path(solution_path)
+            return formatted_output = reconstruct_bfs_path(solution_path)
     elif algo == 'a':
         solution_path = a_star(initial_state)
         if not solution_path:
             print("No solution found using A* Search.")
-            return
-        formatted_output = reconstruct_a_star_path(solution_path)
+            return formatted_output = reconstruct_a_star_path(solution_path)
     else:
         print("Invalid algorithm choice. Use 'b' for BFS or 'a' for A*.")
         return
